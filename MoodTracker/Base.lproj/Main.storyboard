@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="jbZ-e8-f7S">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Mood Tracker-->
+        <scene sceneID="pyH-HT-wlc">
+            <objects>
+                <tableViewController id="IDi-Nr-YSb" customClass="MainTVC" customModule="MoodTracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="fgQ-oZ-Hp0">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="lTd-OU-T59" detailTextLabel="j6t-kY-CbQ" style="IBUITableViewCellStyleSubtitle" id="scZ-AI-btv">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="scZ-AI-btv" id="DLO-28-M1M">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lTd-OU-T59">
+                                            <rect key="frame" x="15" y="3" width="39" height="24"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                            <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <size key="shadowOffset" width="1" height="1"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="j6t-kY-CbQ">
+                                            <rect key="frame" x="15" y="27" width="41" height="14"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                            <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <size key="shadowOffset" width="1" height="1"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="IDi-Nr-YSb" id="YAm-a2-Apa"/>
+                            <outlet property="delegate" destination="IDi-Nr-YSb" id="Za6-89-4iy"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Mood Tracker" id="NNT-PW-RZy">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Qdg-0i-sHA">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="show" identifier="add" id="hpd-qa-PMK"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tsa-Rc-F8c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="483" y="320"/>
+        </scene>
+        <!--Rate Your Mood-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="RateVC" customModule="MoodTracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clouds" translatesAutoresizingMaskIntoConstraints="NO" id="dxt-hG-ByF">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How are you feeling?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FOe-J5-tFE">
+                                <rect key="frame" x="0.0" y="64" width="600" height="242"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="242" id="EPT-2b-wjb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="49"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oyw-n8-JbZ">
+                                <rect key="frame" x="0.0" y="306" width="600" height="59"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <size key="titleShadowOffset" width="2" height="2"/>
+                                <state key="normal" title="VERY HAPPY">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="ratingTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lsD-6L-19y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q7F-ii-wjn">
+                                <rect key="frame" x="0.0" y="365" width="600" height="59"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <size key="titleShadowOffset" width="2" height="2"/>
+                                <state key="normal" title="HAPPY">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="ratingTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sxn-mz-swz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yD7-Bs-oXs">
+                                <rect key="frame" x="0.0" y="424" width="600" height="58"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <size key="titleShadowOffset" width="2" height="2"/>
+                                <state key="normal" title="I'M DOING OK">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="ratingTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pn7-G9-b2z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RGz-oH-Zvb">
+                                <rect key="frame" x="0.0" y="482" width="600" height="59"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <size key="titleShadowOffset" width="2" height="2"/>
+                                <state key="normal" title="SAD">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="ratingTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xNU-x6-v9d"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sk0-Ca-xTT">
+                                <rect key="frame" x="0.0" y="541" width="600" height="59"/>
+                                <color key="backgroundColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <size key="titleShadowOffset" width="2" height="2"/>
+                                <state key="normal" title="VERY SAD">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="ratingTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JzC-I8-HIS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sk0-Ca-xTT" firstAttribute="top" secondItem="RGz-oH-Zvb" secondAttribute="bottom" id="1If-Lk-pPs"/>
+                            <constraint firstItem="dxt-hG-ByF" firstAttribute="trailing" secondItem="Q7F-ii-wjn" secondAttribute="trailing" id="4zA-pR-yQO"/>
+                            <constraint firstItem="Q7F-ii-wjn" firstAttribute="height" secondItem="oyw-n8-JbZ" secondAttribute="height" id="6cF-xh-Ddc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oyw-n8-JbZ" secondAttribute="trailing" constant="-20" id="8S1-Eb-VtI"/>
+                            <constraint firstItem="sk0-Ca-xTT" firstAttribute="height" secondItem="oyw-n8-JbZ" secondAttribute="height" id="FWT-kh-NPS"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="sk0-Ca-xTT" secondAttribute="bottom" id="HZc-F5-reY"/>
+                            <constraint firstItem="sk0-Ca-xTT" firstAttribute="width" secondItem="oyw-n8-JbZ" secondAttribute="width" id="J6m-dd-dIz"/>
+                            <constraint firstItem="dxt-hG-ByF" firstAttribute="top" secondItem="FOe-J5-tFE" secondAttribute="top" id="LJJ-VT-TRQ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="FOe-J5-tFE" secondAttribute="bottom" constant="294" id="Lae-K1-Bgp"/>
+                            <constraint firstItem="RGz-oH-Zvb" firstAttribute="height" secondItem="oyw-n8-JbZ" secondAttribute="height" id="M9q-kS-NUQ"/>
+                            <constraint firstItem="Q7F-ii-wjn" firstAttribute="top" secondItem="oyw-n8-JbZ" secondAttribute="bottom" id="MJv-9j-u54"/>
+                            <constraint firstItem="Q7F-ii-wjn" firstAttribute="width" secondItem="oyw-n8-JbZ" secondAttribute="width" id="QiO-24-Whi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RGz-oH-Zvb" secondAttribute="trailing" constant="-20" id="SAp-iA-aNl"/>
+                            <constraint firstItem="oyw-n8-JbZ" firstAttribute="top" secondItem="FOe-J5-tFE" secondAttribute="bottom" id="SZ3-OE-1CO"/>
+                            <constraint firstItem="dxt-hG-ByF" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="Sbl-d7-zBn"/>
+                            <constraint firstItem="yD7-Bs-oXs" firstAttribute="width" secondItem="oyw-n8-JbZ" secondAttribute="width" id="Ty8-Xm-pyR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Q7F-ii-wjn" secondAttribute="trailing" constant="-20" id="X7Z-UJ-Fhf"/>
+                            <constraint firstItem="FOe-J5-tFE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="XI9-nE-aAA"/>
+                            <constraint firstAttribute="trailing" secondItem="FOe-J5-tFE" secondAttribute="trailing" id="XJj-f4-ePL"/>
+                            <constraint firstItem="RGz-oH-Zvb" firstAttribute="width" secondItem="oyw-n8-JbZ" secondAttribute="width" id="Xnb-in-7Ig"/>
+                            <constraint firstItem="RGz-oH-Zvb" firstAttribute="top" secondItem="yD7-Bs-oXs" secondAttribute="bottom" id="Zll-ye-FeY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yD7-Bs-oXs" secondAttribute="trailing" constant="-20" id="bhL-1k-ZlY"/>
+                            <constraint firstItem="oyw-n8-JbZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="cWk-1u-aXG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sk0-Ca-xTT" secondAttribute="trailing" constant="-20" id="ceY-Ik-4uU"/>
+                            <constraint firstItem="dxt-hG-ByF" firstAttribute="leading" secondItem="oyw-n8-JbZ" secondAttribute="leading" id="chG-FV-HeV"/>
+                            <constraint firstItem="yD7-Bs-oXs" firstAttribute="height" secondItem="oyw-n8-JbZ" secondAttribute="height" id="d0n-xk-hMR"/>
+                            <constraint firstItem="yD7-Bs-oXs" firstAttribute="top" secondItem="Q7F-ii-wjn" secondAttribute="bottom" id="dgU-6D-eEY"/>
+                            <constraint firstItem="sk0-Ca-xTT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="dlH-Mj-psZ"/>
+                            <constraint firstItem="RGz-oH-Zvb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="hLE-ab-33z"/>
+                            <constraint firstItem="Q7F-ii-wjn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="kV1-7t-lCL"/>
+                            <constraint firstItem="FOe-J5-tFE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="xVV-83-gWb"/>
+                            <constraint firstItem="yD7-Bs-oXs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="yCP-Mg-XJv"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Lae-K1-Bgp"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Rate Your Mood" id="QGO-Mf-vuW">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="I4S-SE-KHc">
+                            <connections>
+                                <action selector="cancelTapped:" destination="BYZ-38-t0r" id="ffs-Qh-0mw"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="N4e-uT-f1M">
+                            <connections>
+                                <action selector="saveTapped:" destination="BYZ-38-t0r" id="mqV-Ii-gmq"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="status" destination="FOe-J5-tFE" id="kL1-K3-ME6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1204" y="320"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="sWl-9Y-aD8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jbZ-e8-f7S" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="t9T-76-C3H">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="IDi-Nr-YSb" kind="relationship" relationship="rootViewController" id="dBd-n4-d3h"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HBR-Ca-SmG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-329" y="320"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="clouds" width="640" height="960"/>
+    </resources>
+</document>
