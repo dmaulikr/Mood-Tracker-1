@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34606B931D11973000CFDB3E /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 34606B921D11973000CFDB3E /* README.md */; };
 		349A01361C72E01100E08534 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349A01351C72E01100E08534 /* AppDelegate.swift */; };
 		349A01381C72E01100E08534 /* RateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349A01371C72E01100E08534 /* RateVC.swift */; };
 		349A013B1C72E01100E08534 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 349A01391C72E01100E08534 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		34606B921D11973000CFDB3E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		349A01321C72E01100E08534 /* MoodTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoodTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		349A01351C72E01100E08534 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		349A01371C72E01100E08534 /* RateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateVC.swift; sourceTree = "<group>"; };
@@ -46,6 +48,7 @@
 		349A01291C72E01100E08534 = {
 			isa = PBXGroup;
 			children = (
+				34606B921D11973000CFDB3E /* README.md */,
 				349A014A1C72E06C00E08534 /* Rating+CoreDataProperties.swift */,
 				349A014B1C72E06C00E08534 /* Rating.swift */,
 				349A01341C72E01100E08534 /* MoodTracker */,
@@ -151,6 +154,7 @@
 				349A013E1C72E01100E08534 /* MoodTracker.xcdatamodeld in Sources */,
 				349A01381C72E01100E08534 /* RateVC.swift in Sources */,
 				349A014D1C72E06C00E08534 /* Rating.swift in Sources */,
+				34606B931D11973000CFDB3E /* README.md in Sources */,
 				349A014C1C72E06C00E08534 /* Rating+CoreDataProperties.swift in Sources */,
 				349A014F1C72E18D00E08534 /* MainTVC.swift in Sources */,
 				349A01361C72E01100E08534 /* AppDelegate.swift in Sources */,
